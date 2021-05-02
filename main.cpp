@@ -6,6 +6,8 @@ The scanner works by using CreateToolhelp32Snapshot to find the Wesnoth process 
 Once located, a buffer is created and the module's memory is read into that buffer. The module's memory mainly contains opcodes for instruction.
 
 Once loaded, we loop through all the bytes in the buffer and search for our pattern. Once found, we print the offset.
+
+The full explanation for how this code works is available at: https://gamehacking.academy/lesson/34
 */
 
 #include <windows.h>
